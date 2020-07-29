@@ -1,0 +1,39 @@
+.container {
+    display: grid;
+    grid-template-columns: [1] 40px [2] 40px [3] 40px [4] 40px;
+    grid-template-rows: [r1] 30% [r2] auto [r3] 30%;
+}
+
+.top {
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row: r1;
+    background-color: rgb(236, 157, 170);
+}
+
+.box1 {
+    grid-row: r2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.box2 {
+    grid-row: r2;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+.box3 {
+    grid-row: r2;
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+
+.bot {
+    text-align: center;
+    grid-row: r3;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    background-color: rgb(151, 207, 151);
+}
